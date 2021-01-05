@@ -7,7 +7,8 @@ import { RentModule } from './rent/rent.module';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://user:password@cluster0-i4vml.mongodb.net/car_rent?retryWrites=true&w=majority',
+      'mongodb+srv://<user>:<password>@cluster0-i4vml.mongodb.net/<dbname>?retryWrites=true&w=majority',
+
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
